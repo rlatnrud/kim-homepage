@@ -1,0 +1,257 @@
+/* style.css */
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+#index ,body{
+   font-family: 'Noto Sans KR', sans-serif;
+    color: #666;
+    font-size: 100%;
+    text-align: center;   
+  }
+  body{
+    height: 100%;
+  }
+  ul{
+    list-style: none;
+  }
+  a{
+    text-decoration: none;
+    color: #666;
+  }
+  .img-circle{
+    border-radius: 50%;
+  }
+  .img-responsive{
+    /* max-width: 100%; */
+    width: 100%;
+  }
+  .mt-2{margin-top: 20px;}
+  .mt-4{margin-top: 40px;}
+  
+  #index header{
+    display: flex;
+    height: 650px;
+    background: #ccc;
+    color: #fff;
+    background: url('../images/main.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  
+    align-items: center;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+    text-align: center;
+  }
+  #index header h1{
+    font-size: 4em;
+    font-family: 'Oswald', sans-serif;
+  
+  }
+  .line{
+    display: inline-block;
+    width: 4em;
+    height: 1px;
+    border-bottom: 2px solid #666;
+    vertical-align: middle;
+    margin: 2em;
+   
+  }
+  header .line{border-color: #fff;}
+  #index header p{
+    font-size: 23px;
+  }
+  
+
+  
+  /* 메인메뉴 */
+  #main-menu{
+    left: 0; right: 0; 
+    background: #eebd1b;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    z-index: 99;
+
+    position: relative;
+    left: 0; bottom: 0;
+    width: 100%; height: 70px;
+     line-height: 30px;
+    text-align: center;
+  }
+  #nav.fixed {
+    position: fixed;
+    left: 0; top: 0;
+  }
+  
+
+ #main-menu.sticky{
+  position: fixed;
+  left: 0;right: 0;
+  top: 0;
+}
+ 
+  #main-menu .container{
+    display: none;
+  }
+  #main-menu ul li a{
+    display: block;
+    padding: 15px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #1f1708;
+    transition: 1s;
+  }
+  #main-menu ul li a:hover{
+    color: #fdfdfd;
+    text-shadow: 1px 1px 2px rgba(31, 30, 30, 0.2);
+  }
+  @media (min-width: 768px){
+    #main-menu{
+      position: relative;
+      padding: 5px;
+    }
+    #main-menu .container{
+      display: block !important;
+    }
+    #main-menu ul li{
+      display: inline-block;
+      margin-left: 3em;
+      margin-right: 3em;
+    }
+    #toggle{
+      display: none;
+    }
+  } /* end media */
+  
+  
+  
+  
+  
+  section{
+    padding: 100px 0;
+  }
+  section h2{
+    font-size: 36px;
+  }
+
+#about{
+  
+   background-image: url("../images/lemon.jpg");
+  color: #000;
+}
+ #about .line{
+    border-color: #000;
+ } 
+  
+  
+ 
+
+  #portfolio{
+    background: #fece8c;
+    width: 100%;
+    height: 1300px;
+  
+  }
+ 
+  #portfolio ul li{
+    /* border: 1px solid red; */
+    margin-top:20px;
+    margin-bottom:50px;
+  }
+  #portfolio .container p{
+    font-size: 20px;
+  }
+ 
+
+  #portfolio h2{
+      color: #fff;
+  }
+  #portfolio .line{
+      border-color: #fff;
+  }
+ 
+  
+  
+    #worklist li{
+        position: relative;
+        width: 380px; height: 380px;
+        margin-left: 20px;
+        margin-bottom:20px;   
+        float: left;   
+        box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    }
+    #worklist li:nth-child(3n){
+        margin-right: 0;
+    }
+    #worklist>li>a>.info{
+        position: absolute;
+        width: 100%;height: 100%;
+        left: 0; top: 0;
+        background: #eebd1b;
+        display: none;
+        opacity:0.9;
+    }
+    #worklist>li:hover>a>.info{
+        display: block;
+    }
+    .info h4{
+        padding-top: 50px;
+        font-size: 30px;
+        color: #000;
+    }
+  
+    .info p{
+        padding-top: 30px;
+        text-align: center;
+        padding: 50px;
+        color: #000;
+    }
+    #worklist >li img{
+        transition: 0.5s;
+    }
+    #worklist >li:hover img{
+        transform: scale(1.02);
+    }
+
+  
+  #portfolio .button .container a:hover{
+    background: rgba(0,0,0,0.6);
+    transition: 0.5s;
+    
+  }
+  
+  
+  
+
+ 
+  footer{
+    background: #bbb49f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: lighter;
+  }
+ footer p{
+   font-size: 30px;
+   text-align: left;
+   padding-left:40%;
+ }
+  
+  
+  footer .line{
+      border-color: #fff;
+  }
+.cute{
+  border: 1px solid #000;
+  height: 30px;
+  width: 100px;
+  margin-left: 135px;
+  position: relative;
+  color: #000;
+}
+
+
+
+
+  
+ 
+  
